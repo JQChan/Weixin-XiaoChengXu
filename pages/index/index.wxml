@@ -1,0 +1,8 @@
+<swiper class="banner-swiper" indicator-dots="{{indicatorDots}}", autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <swiper-item class="swiper-item" wx:for="{{banners}}">
+    <navigator url="../detail/detail?id={{item.productId}}">
+      <image src="{{item.image}}" class="slide-image">
+      </image>
+    </navigator>
+  </swiper-item>
+</swiper>
