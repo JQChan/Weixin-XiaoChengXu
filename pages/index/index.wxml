@@ -6,3 +6,23 @@
     </navigator>
   </swiper-item>
 </swiper>
+
+<view class="shelf-nav">
+  <view class="shelf-nav-item" wx:for="{{shelfNavList}}">
+    <navigator url="../list/list?id={{item.id}}">
+      <image src="{{item.cover_image}}" class="shelf-nav-item_image">
+      </image>
+      <text>{{item.name}}</text>
+    </navigator>
+  </view>
+</view>
+
+< view class=" shelf- header"> 
+  < view class=" shelf- title"> 
+    < text class=" shelf- title- en">{{ shelf. english_ name }}</text> 
+    < text class=" shelf- title- cn">{{ shelf. name }}</text> 
+  </ view> 
+  < view class=" shelf- more"> 
+    < navigator url="../ list/ list? id={{ shelf. id }}" class=" ifanrin- more- icon ifanrin"> </ navigator> 
+  </ view> 
+</ view>
